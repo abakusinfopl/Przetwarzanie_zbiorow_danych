@@ -108,4 +108,25 @@ pd.merge(left, right, on='id', how='left')	 #Do łączenia po tych samych nazwac
 pd.merge(left, right, left_on='id', right_on='ID')  #Do łączenia po róźnych nazwach kolumn (id i ID)
 18:14 31.03.2022
 
+data[data.isnull().mean(axis=1) < 0.1]
 
+df = pd.DataFrame(np.random.normal(100, 10, 1000), columns=(['a'])
+df = df.append(pd.DataFrame({'a':[100000]}))
+df
+
+
+plt.figure(figsize=(15,7))
+plt.hist(df['a'],bins=40
+plt.show()
+
+up_limit = df['a].mean()+df['a'].std()*3
+lw_limit = df['a].mean()-df['a'].std()*3
+
+[(df['a']<up_limit) & (df['a']>lw_limit)]
+
+
+pep8 - instrukcje jak pisać kod w Pythonie, linie warto łamać, 
+19:21 31.03.2022
+
+Przerwa do 19:35
+19:21 31.03.2022
