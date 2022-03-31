@@ -643,3 +643,5 @@ GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05
 $ date
 Thu Mar 31 14:47:21     2022
 
+Edycja przez VIM
+
