@@ -68,3 +68,14 @@ branch 'main' set up to track 'origin/main'.
 GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
 $
 10:39 2022-03-31
+Poszło:
+git remote set-url origin ssh://git@github.com/PiotrWNowak/SDA_zadania.git
+10:45 2022-03-31
+
+$ git push
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
