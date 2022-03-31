@@ -130,3 +130,6 @@ pep8 - instrukcje jak pisać kod w Pythonie, linie warto łamać,
 
 Przerwa do 19:35
 19:21 31.03.2022
+
+Po 21 trzeba odebrać Adama z dworca o 21:40
+19:24 31.03.2022
