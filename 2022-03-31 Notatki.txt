@@ -155,3 +155,20 @@ log(x+1)
 log(x)
 log(10) itd
 20:08 31.03.2022
+
+np.log1p(df['a'])
+20:11 31.03.2022
+One-hot-encoding
+
+titanic.csv
+scikit-learn.org
+Modele machinelearning, transformatyzacje, dyskretyzacja, 
+x = data
+
+One-hot-encoding:
+from sklearn.preprocessing import OneHotEncoder
+enc = OneHotEncoder()
+
+Kodowanie 1 z n
+20:31 31.03.2022
+
