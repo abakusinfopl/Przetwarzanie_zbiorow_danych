@@ -133,3 +133,17 @@ Przerwa do 19:35
 
 Po 21 trzeba odebrać Adama z dworca o 21:40
 19:24 31.03.2022
+
+Po przerwie
+Usuwanie np. 10% danych
+up_limit = df['a].quantile(0.95)
+lw_limit = df['a].quantile(0.95)
+[(df['a']<up_limit) & (df['a']>lw_limit)]
+
+19:40 31.03.2022
+
+Ogranicznie wartości - dropowanie:
+
+df['a']
+np.log(df['a'])
+20:02 31.03.2022
