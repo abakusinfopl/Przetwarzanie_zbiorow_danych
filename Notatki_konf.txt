@@ -144,3 +144,222 @@ branch 'main' set up to track 'origin/main'.
 
 GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
 11:00 2022-03-31
+
+Zmiana nazwy repozytorium Piotra - bez skutku
+Przywrócenie własnego - OK
+11:02 2022-03-31
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit -m "Dodanie git remote set-url origin ssh://git@github.com/PiotrWNowak/SDA_zadania.git"
+[main aac1efc] Dodanie git remote set-url origin ssh://git@github.com/PiotrWNowak/SDA_zadania.git
+ 1 file changed, 11 insertions(+)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit -m "Przywrócenie własnego repozytorium - OK"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Notatki_konf.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 524 bytes | 524.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/abakusinfopl/TestRepo5.git
+   2f5156d..aac1efc  main -> main
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit -m "Przywrócenie własnego repozytorium - OK"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Notatki_konf.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit Notatki_konf.txt -m "Przywrócenie własnego repozytorium - OK"
+[main b23b00d] Przywrócenie własnego repozytorium - OK
+ 1 file changed, 65 insertions(+)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 830 bytes | 12.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/abakusinfopl/TestRepo5.git
+   aac1efc..b23b00d  main -> main
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git@github.com:abakusinfopl/TestRepo5.git
+bash: git@github.com:abakusinfopl/TestRepo5.git: No such file or directory
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote add origin git@github.com:abakusinfopl/TestRepo5.git
+error: remote origin already exists.
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote add origin git@github.com:abakusinfopl/Przetwarzanie_zbiorow_danych.git
+error: remote origin already exists.
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ echo "# Przetwarzanie_zbiorow_danych" > README.md
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git init
+Reinitialized existing Git repository in D:/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master/.git/
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit -m "commit dla repo Przetwarzanie zbiorow danych"
+[main d97d5a6] commit dla repo Przetwarzanie zbiorow danych
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git branch -M main
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote add origin git@github.com:abakusinfopl/Przetwarzanie_zbiorow_danych.git
+error: remote origin already exists.
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote add origin https://github.com/abakusinfopl/Przetwarzanie_zbiorow_danych.git
+error: remote origin already exists.
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ ^C
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+origin  https://github.com/abakusinfopl/TestRepo5.git (fetch)
+origin  https://github.com/abakusinfopl/TestRepo5.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote rename origin Przetwarzanie_zbiorow_danych
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (fetch)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ ^C
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (fetch)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (fetch)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote add origin https://github.com/abakusinfopl/Przetwarzanie_zbiorow_danych.git
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit -m "commit dla repo Przetwarzanie zbiorow danych"
+On branch main
+Your branch is ahead of 'Przetwarzanie_zbiorow_danych/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 381 bytes | 381.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/abakusinfopl/Przetwarzanie_zbiorow_danych.git
+To https://github.com/abakusinfopl/TestRepo5.git
+   b23b00d..d97d5a6  main -> main
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (fetch)
+Przetwarzanie_zbiorow_danych    https://github.com/abakusinfopl/TestRepo5.git (push)
+origin  https://github.com/abakusinfopl/Przetwarzanie_zbiorow_danych.git (fetch)
+origin  https://github.com/abakusinfopl/Przetwarzanie_zbiorow_danych.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$
+11:34 2022-03-31
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ echo 11:34 2022-03-31
+11:34 2022-03-31
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ time
+
+real    0m0.093s
+user    0m0.000s
+sys     0m0.000s
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ date
+Thu Mar 31 11:35:04     2022
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$
