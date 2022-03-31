@@ -363,3 +363,4 @@ Thu Mar 31 11:35:04     2022
 
 GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
 $
+11:40 2022-03-31
