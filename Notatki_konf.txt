@@ -507,4 +507,26 @@ Thu Mar 31 12:51:43     2022
 
 GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
 $
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Notatki_konf.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit -a
+[main 92d73d9] Usunięcie nieaktualnego repo i aktualizacja notatek
+ 1 file changed, 144 insertions(+)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+12:57 2022-03-31
 
