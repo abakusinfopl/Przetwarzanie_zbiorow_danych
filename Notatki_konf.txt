@@ -79,3 +79,68 @@ fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote set-url origin ssh://git@github.com/PiotrWNowak/SDA_zadania.git^C
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+origin  ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+origin  ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote rename origin PiotrNowak
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote add origin https://github.com/abakusinfopl/TestRepo5.git
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git remote -v
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (fetch)
+PiotrNowak      ssh://git@github.com/PiotrWNowak/SDA_zadania.git (push)
+origin  https://github.com/abakusinfopl/TestRepo5.git (fetch)
+origin  https://github.com/abakusinfopl/TestRepo5.git (push)
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git commit -m "Dodanie git remote set-url origin ssh://git@github.com/PiotrWNowak/SDA_zadania.git"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Notatki_konf.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git add Notatki_konf.txt
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+GronekA@E5803 MINGW64 /d/TEST/_ABAKUS/Data Scientist/Materiały/2022-03-28_04-05_Przetwarzanie zbiorów danych/SDA_zadania-master (main)
+11:00 2022-03-31
