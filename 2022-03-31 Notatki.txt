@@ -147,3 +147,11 @@ Ogranicznie wartości - dropowanie:
 df['a']
 np.log(df['a'])
 20:02 31.03.2022
+
+https://wofframalpha.com
+log(x+1)
+20:07 31.03.2022
+
+log(x)
+log(10) itd
+20:08 31.03.2022
