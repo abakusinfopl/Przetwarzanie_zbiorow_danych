@@ -645,5 +645,6 @@ Thu Mar 31 14:47:21     2022
 
 Edycja przez VIM
 
-Pobranie repo do domu
-
+#Pobranie aktualnego stanu z sieci: 08:19 2022-04-01
+git pull 
+08:22 2022-04-01
