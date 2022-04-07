@@ -1,0 +1,95 @@
+CREATE TABLE Produkt(
+    id INTEGER,
+    Nazwa VARCHAR(20),
+    Producent VARCHAR(25)
+);
+
+INSERT INTO Produkt (id, Nazwa, Producent)
+VALUES (1, 'Aaa', 'A'),
+	(2, 'Bbb', 'A'),
+        (3, 'Ccc', 'B'),
+        (4, 'Ddd', 'B')
+
+SELECT * FROM Produkt
+
+ALTER TABLE Produkt
+ADD opis_produktu VARCHAR(255)
+
+UPDATE Produkt SET opis_produktu = 'whatever';
+
+DROP TABLE Produkt 
+
+CREATE TABLE Produkt(
+    id INTEGER,
+    Nazwa VARCHAR(20),
+    Producent VARCHAR(25),
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE Orders (
+    OrderID integer,
+    ProduktID integer,
+    FOREIGN KEY (ProduktID) REFERENCES Produkt(id)
+);
+
+INSERT INTO Orders (OrderID, ProduktID)
+VALUES (12, 1)
+
+INSERT INTO Orders (OrderID, ProduktID)
+VALUES (13, 5)
+
+SELECT
+id AS ident,
+    nazwa AS abc
+    FROM Produkt;
+
+DROP TABLE Produkt
+
+CREATE TABLE LEWA(
+    id VARCHAR(20),
+    A VARCHAR(20),
+    B VARCHAR(25)
+);
+
+INSERT INTO LEWA (id, A, B)
+VALUES ('K0','A0','B0'),
+	('K1','A1','B1'),
+        ('K2','A2','B2'),
+        ('K3','A3','B3')
+
+CREATE TABLE PRAWA(
+    id VARCHAR(20),
+    C VARCHAR(20),
+    D VARCHAR(25)
+);
+
+INSERT INTO PRAWA (id, C, D)
+VALUES ('K0','C0','D0'),
+	('K2','C2','D2'),
+        ('K1','C1','D1'),
+        ('K4','C4','D4')
+
+CREATE TABLE tabela(
+    id int,
+    cena int,
+    kraj VARCHAR(25)
+);
+
+INSERT INTO tabela (id, cena, kraj)
+VALUES (1,10,'A'),
+	(2,20,'A'),
+        (3,30,'B'),
+        (4,40,'B'),
+        (5,50,'B')
+
+SELECT COUNT(*), kraj
+FROM tabela
+GROUP BY kraj
+
+SELECT COUNT(id), kraj
+FROM tabela
+GROUP BY kraj
+HAVING COUNT(id) >2
+
+having kraj='A'
+

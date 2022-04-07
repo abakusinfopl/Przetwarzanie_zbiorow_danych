@@ -1,0 +1,705 @@
+pandas.pydata.org
+
+df = pd.DataFrame([[1,2],[2,3],[4,5]], columns=["a","b"])
+df.columns
+df['a']
+
+df.shape #kształt
+
+df = pd.DataFrame(np.random.randn(6, 4), columns=list('ABCD'))
+
+df = pd.DataFrame({'A': 1.,
+			'B': ('1,2,3,4')})
+
+df = pd.DataFrame({'A': 1.,
+                    'B': pd.Timestamp('20130102'),
+                    'C': pd.Series(1, index=list(range(4)), dtype='float32'),
+                    'D': np.array([3] * 4, dtype='int32'),
+                    'E': pd.Categorical(["test", "train", "test", "train"]),
+                    'F': 'foo'})
+Uwaga:
+5//2
+da wynik 2
+
+5/2 
+da wynik 2,5
+
+data = pd.read_csv('content/drive/MyDrive/SDA\ Data\ Science/ML-datasets-master/titanic.csv', index_col=0)
+
+https://github.com/PiotrWNowak/SDA_zadania
+
+df = pd.DataFrame([[Jan,1,3],[Antonia,0,4],[Grzegorz,1,6]], columns=["Imie","Płeć","Ocena"])
+ds
+22:43 29.03.2022
+
+17:37 30.03.2022 cd
+
+https://github.com/PiotrWNowak/SDA_zadania.git
+
+
+df1 = pd.DataFrame({
+    "A": ["A0", "A1", "A2", "A3"],
+    "B": ["B0", "B1", "B2", "B3"],
+    "C": ["C0", "C1", "C2", "C3"],
+    "D": ["D0", "D1", "D2", "D3"],
+    },
+    index=[0, 1, 2, 3])
+
+df2 = pd.DataFrame({
+    "A": ["A4", "A5", "A6", "A7"],
+    "B": ["B4", "B5", "B6", "B7"],
+    "C": ["C4", "C5", "C6", "C7"],
+    "D": ["D4", "D5", "D6", "D7"],
+    },
+    index=[4, 5, 6, 7])
+
+df3 = pd.DataFrame({
+    "A": ["A8", "A9", "A10", "A11"],
+    "B": ["B8", "B9", "B10", "B11"],
+    "C": ["C8", "C9", "C10", "C11"],
+    "D": ["D8", "D9", "D10", "D11"],
+    },
+    index=[4, 5, 6, 7])
+
+https://pandas.pydata.org/docs/user_guide/merging.html
+
+pandas concat
+19:49 30.03.2022
+
+
+pd.concat([df1,df2])
+pd.concat([df1,df2,df3]).reset_index(drop=True)
+pd.concat([df1,df2,df3],axis=1)
+
+print('DF1')
+pd.concat([df1,df4], join='inner')  #łączy po części wspólnej
+
+pd.concat([df1,df4], join='outer') #łączy wszystko
+20:18 30.03.2022
+
+pd.concat([df1,df4], join='left') #nie ma - działa tylko przy merga
+pd.concat([df1,df4],axis=1)
+
+pd.concat([df1,df4],axis=1, join='inner')
+
+Merge:
+
+left = pd.DataFrame({
+    "key": ["K0", "K1", "K2", "K3"],
+    "A": ["A0", "A1", "A2", "A3"],
+    "B": ["B0", "B1", "B2", "B3"],
+    })
+
+right = pd.DataFrame({
+    "key": ["K0", "K1", "K2", "K3"],
+    "C": ["C0", "C1", "C2", "C3"],
+    "D": ["D0", "D1", "D2", "D3"],
+    })
+
+print('left')
+display(left)
+print('right')
+display(right)
+
+20:25 30.03.2022
+
+17:30 31.03.2022
+pd.merge(left, right, on='id', how='left')	 #Do łączenia po tych samych nazwach kolumn (id)
+pd.merge(left, right, left_on='id', right_on='ID')  #Do łączenia po róźnych nazwach kolumn (id i ID)
+18:14 31.03.2022
+
+data[data.isnull().mean(axis=1) < 0.1]
+
+df = pd.DataFrame(np.random.normal(100, 10, 1000), columns=(['a'])
+df = df.append(pd.DataFrame({'a':[100000]}))
+df
+
+
+plt.figure(figsize=(15,7))
+plt.hist(df['a'],bins=40
+plt.show()
+
+up_limit = df['a].mean()+df['a'].std()*3
+lw_limit = df['a].mean()-df['a'].std()*3
+
+[(df['a']<up_limit) & (df['a']>lw_limit)]
+
+
+pep8 - instrukcje jak pisać kod w Pythonie, linie warto łamać, 
+19:21 31.03.2022
+
+Przerwa do 19:35
+19:21 31.03.2022
+
+Po 21 trzeba odebrać Adama z dworca o 21:40
+19:24 31.03.2022
+
+Po przerwie
+Usuwanie np. 10% danych
+up_limit = df['a].quantile(0.95)
+lw_limit = df['a].quantile(0.95)
+[(df['a']<up_limit) & (df['a']>lw_limit)]
+
+19:40 31.03.2022
+
+Ogranicznie wartości - dropowanie:
+
+df['a']
+np.log(df['a'])
+20:02 31.03.2022
+
+https://wofframalpha.com
+log(x+1)
+20:07 31.03.2022
+
+log(x)
+log(10) itd
+20:08 31.03.2022
+
+np.log1p(df['a'])
+20:11 31.03.2022
+One-hot-encoding
+
+titanic.csv
+scikit-learn.org
+Modele machinelearning, transformatyzacje, dyskretyzacja, 
+x = data
+
+One-hot-encoding:
+from sklearn.preprocessing import OneHotEncoder
+enc = OneHotEncoder()
+
+Kodowanie 1 z n
+20:31 31.03.2022
+
+
+17:31 04.04.2022
+
+ZDDATApol20 - Wirtualna klasa
+
+Polski
+
+    Pełny ekran
+    A
+    Panel wydarzenia
+
+SDA
+SDA
+Kamila
+P...17:32
+Cześć
+Odpisz na wiadomość
+Kopiuj
+17:32
+Cześć
+Odpisz na wiadomość
+Kopiuj
+I...17:33
+jestem
+Odpisz na wiadomość
+Kopiuj
+F...17:34
+Cześć, jestem sorry za spóźnienie
+Odpisz na wiadomość
+Kopiuj
+G...17:35
+ta
+Odpisz na wiadomość
+Kopiuj
+D...17:36
+lepiej
+Odpisz na wiadomość
+Kopiuj
+SDA18:04
+StandardScaler
+Odpisz na wiadomość
+Kopiuj
+SDA18:09
+kaggle.com
+Odpisz na wiadomość
+Kopiuj
+SDA18:30
+surveymonkey.com/r/QZMC9HV
+Odpisz na wiadomość
+Kopiuj
+
+18:38 04.04.2022
+plt.savefig('1.png')
+
+plt.sacefig('MyDrive....), bbox_inches=tight...
+18:54 04.04.2022
+
+https://pandas.pydata.org/docs/user_guide/text.html
+
+https://pandas.pydata.org/docs/user_guide/timeseries.html
+
+https://sqliteonline.com/
+
+w3schools.com # przykłady składni zależnie od wersji bazy SQL
+19:21 04.04.2022
+
+https://sqliteonline.com/
+
+sqliteonline.comsqliteonline.com
+SQL Online Compiler - for Data Science
+SQL OnLine - (Test DB): SQLite, MariaDB / MySQL, PostgreSQL, MS SQL Server. User-friendly interface for data science. No registration for start, No DownLoad, No Install. Online test SQL script. Online Open/Save SQLite file. Online view all table DB. Fiddle link SQL text and DB file. SQL Test, SQLite in Browser, Data for World, online sql compiler,free db,free database,db free,database free
+
+19:23 04.04.2022
+
+19:57 04.04.2022
+Ćwiczenia
+
+
+
+ZDDATApol20 - Wirtualna klasa
+
+Polski
+
+    Pełny ekran
+    A
+    Panel wydarzenia
+
+SDA
+SDA
+P...17:32
+Cześć
+Odpisz na wiadomość
+Kopiuj
+17:32
+Cześć
+Odpisz na wiadomość
+Kopiuj
+I...17:33
+jestem
+Odpisz na wiadomość
+Kopiuj
+F...17:34
+Cześć, jestem sorry za spóźnienie
+Odpisz na wiadomość
+Kopiuj
+G...17:35
+ta
+Odpisz na wiadomość
+Kopiuj
+D...17:36
+lepiej
+Odpisz na wiadomość
+Kopiuj
+SDA18:04
+StandardScaler
+Odpisz na wiadomość
+Kopiuj
+SDA18:09
+kaggle.com
+Odpisz na wiadomość
+Kopiuj
+SDA18:30
+surveymonkey.com/r/QZMC9HV
+Odpisz na wiadomość
+Kopiuj
+18:39
+Czy do tych wykresów które widzieliśmy, możesz pokazać jak je wyeksportować jako grafiki zewnątrz ?
+Odpisz na wiadomość
+Kopiuj
+SDA18:39
+18:50
+Odpisz na wiadomość
+Kopiuj
+SDA18:41
+plt.savefig('1.png')
+Odpisz na wiadomość
+Kopiuj
+18:45
+dzięki  🙂
+Odpisz na wiadomość
+Kopiuj
+P...18:51
+pokazałbyś scieżke do zapisu jeszcze raz?
+pokazalbys sciezke/kod do zapisusu jeszcze raz?
+Odpisz na wiadomość
+Kopiuj
+19:00
+czym dla nas różnią się relacyjne  bazy danych od nie relacyjnych ?
+Odpisz na wiadomość
+Kopiuj
+19:06
+To nie jest więc kwestia wydajności albo czegoś ?
+Odpisz na wiadomość
+Kopiuj
+19:06
+OK
+Odpisz na wiadomość
+Kopiuj
+19:11
+żaden problem, dzięki
+Odpisz na wiadomość
+Kopiuj
+W...19:30
+tak
+Odpisz na wiadomość
+Kopiuj
+SDA19:45
+19:55
+Odpisz na wiadomość
+Kopiuj
+M... P...19:57
++
+Odpisz na wiadomość
+Kopiuj
+P...19:57
++
+Odpisz na wiadomość
+Kopiuj
+I...19:57
++
+Odpisz na wiadomość
+Kopiuj
+W...19:57
++
+Odpisz na wiadomość
+Kopiuj
+K...19:57
++
+Odpisz na wiadomość
+Kopiuj
+F...19:57
++
+Odpisz na wiadomość
+Kopiuj
+D...19:57
++
+Odpisz na wiadomość
+Kopiuj
+M...19:57
++
+Odpisz na wiadomość
+Kopiuj
+G...19:57
++
+Odpisz na wiadomość
+Kopiuj
+J...19:57
++
+Odpisz na wiadomość
+Kopiuj
+K...19:57
++
+Odpisz na wiadomość
+Kopiuj
+P...19:57
++
+Odpisz na wiadomość
+Kopiuj
+19:57
++
+Odpisz na wiadomość
+Kopiuj
+I...20:05
+CREATE TABLE Produkt(
+    id INTEGER,
+    Nazwa VARCHAR(20),
+    Producent VARCHAR(25)
+);
+
+INSERT INTO Produkt (id, Nazwa, Producent)
+VALUES (1, 'Aaa', 'A'),
+	(2, 'Bbb', 'A'),
+        (3, 'Ccc', 'B'),
+        (4, 'Ddd', 'B')
+        
+ALTER TABLE Produkt
+ADD opis_produktu VARCHAR(255)
+Odpisz na wiadomość
+Kopiuj
+20:05
+Dla komendy w jednej linii Run działał
+Odpisz na wiadomość
+Kopiuj
+M... P...20:19
++
+Odpisz na wiadomość
+Kopiuj
+J...20:19
++
+Odpisz na wiadomość
+Kopiuj
+20:19
++
+Odpisz na wiadomość
+Kopiuj
+P...20:19
++
+Odpisz na wiadomość
+Kopiuj
+K...20:19
++
+Odpisz na wiadomość
+Kopiuj
+W...20:22
+średniki  😀
+Odpisz na wiadomość
+Kopiuj
+
+20:36 04.04.2022
+
+17:26 05.04.2022
+MS SQL:
+
+CREATE TABLE cars
+(
+    car_id INTEGER PRIMARY KEY,
+    price_per_day INTEGER
+);
+CREATE TABLE bookings
+(
+    booking_id INTEGER PRIMARY KEY,
+    car_id INTEGER,
+    total_amount INTEGER
+);
+
+
+# 18:11 05.04.2022
+
+CREATE TABLE tabela(
+    id int,
+    cena int,
+    kraj VARCHAR(25)
+);
+INSERT INTO tabela (id, cena, kraj)
+VALUES (1,10,‘A’),
+	(2,20,‘A’),
+        (3,30,‘B’),
+        (4,40,‘B’),
+        (5,50,‘B’);
+CREATE TABLE tabela2(
+    id int,
+    prod VARCHAR(25)
+);
+INSERT INTO tabela2 (id, prod)
+VALUES (1,‘C’),
+	(2,‘C’)
+
+# 18:21 05.04.2022
+
+# Piotr Nowak  6:34 PM
+
+CREATE TABLE LEWA(
+    id VARCHAR(20),
+    A VARCHAR(20),
+    B VARCHAR(25)
+);
+INSERT INTO LEWA (id, A, B)
+VALUES (‘K0’,‘A0’,‘B0’),
+        (‘K2’,‘A2’,‘B2’),
+        (‘K3’,‘A3’,‘B3’);
+CREATE TABLE PRAWA(
+    id VARCHAR(20),
+    C VARCHAR(20)
+);
+INSERT INTO PRAWA (id, C)
+VALUES (‘K0’,‘C0’),
+      (‘K1’,‘C1’),
+      (‘K2’,‘C2’),
+      (‘K3’,‘C3’),
+      (‘K4’,‘C4’),
+      (‘K5’,‘C5’),
+      (‘K6’,‘C6’)
+
+#  7:04 PM
++++++++++++++++
+7:04
+CREATE TABLE tabela(
+    i int,
+  	w int,
+    n VARCHAR(20)
+);
+INSERT INTO tabela
+VALUES (1,1,‘A’),
+(2,1,‘A’),
+(3,1,‘A’),
+(4,1,‘B’),
+(5,1,‘B’),
+(6,1,‘B’),
+(7,1,‘B’),
+(8,1,‘B’);
+CREATE TABLE dodatkowa(
+    i int,
+    x VARCHAR(20)
+);
+INSERT INTO dodatkowa
+VALUES (1,‘C’),
+(2,‘C’),
+(3,‘C’),
+(4,‘C’),
+(5,‘C’);
+
+# 7:25 PM
+=============
+7:25
+select
+	*
+from (
+    SELECT
+        tab.n,
+        count(d.i)/count(tab.i)::float procent
+    from tabela tab
+    full outer join dodatkowa d on tab.i=d.i
+    group by tab.n
+) grupowe
+full outer join tabela on grupowe.n=tabela.n
+
+# 19:26 05.04.2022
+
+
+
+ZDDATApol20 - Wirtualna klasa
+
+Polski
+
+    Pełny ekran
+    A
+    Panel wydarzenia
+
+SDA
+SDA
+17:30
+OK
+Odpisz na wiadomość
+Kopiuj
+P...17:30
+Cześć
+Odpisz na wiadomość
+Kopiuj
+SDA17:34
+osoby spóźnione proszę o informacje
+Odpisz na wiadomość
+Kopiuj
+W...17:36
+IDE?
+Odpisz na wiadomość
+Kopiuj
+G...17:37
+ide
+Odpisz na wiadomość
+Kopiuj
+D...17:38
+czesc, przepraszam za spoznienie
+Odpisz na wiadomość
+Kopiuj
+K...18:41
+20
+Odpisz na wiadomość
+Kopiuj
+SDA18:41
+19
+Odpisz na wiadomość
+Kopiuj
+SDA18:41
+19:00
+Odpisz na wiadomość
+Kopiuj
+M... P...19:34
+nie
+Odpisz na wiadomość
+Kopiuj
+M... P...19:35
++
+Odpisz na wiadomość
+Kopiuj
+W...19:35
++
+Odpisz na wiadomość
+Kopiuj
+J...19:35
++
+Odpisz na wiadomość
+Kopiuj
+D...19:35
++
+Odpisz na wiadomość
+Kopiuj
+19:37
++
+Odpisz na wiadomość
+Kopiuj
+20:01
+Data2 i Data3 OK
+Odpisz na wiadomość
+Kopiuj
+K...20:01
++
+Odpisz na wiadomość
+Kopiuj
+G...20:01
++
+Odpisz na wiadomość
+Kopiuj
+P...20:10
++
+Odpisz na wiadomość
+Kopiuj
+W...20:10
++
+Odpisz na wiadomość
+Kopiuj
+G...20:10
++
+Odpisz na wiadomość
+Kopiuj
+D...20:10
++
+Odpisz na wiadomość
+Kopiuj
+K...20:10
++
+Odpisz na wiadomość
+Kopiuj
+M... P...20:10
++
+Odpisz na wiadomość
+Kopiuj
+J...20:11
++
+Odpisz na wiadomość
+Kopiuj
+K...20:11
++
+Odpisz na wiadomość
+Kopiuj
+20:11
++
+Odpisz na wiadomość
+Kopiuj
+P...20:11
++
+Odpisz na wiadomość
+Kopiuj
+20:11
+On na końcu wywalił błędy...
+Odpisz na wiadomość
+Kopiuj
+20:11
+"ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+google-colab 1.0.0 requires requests~=2.23.0, but you have requests 2.27.1 which is incompatible.
+datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is incompatible.
+albumentations 0.1.12 requires imgaug<0.2.7,>=0.2.5, but you have imgaug 0.2.9 which is incompatible."
+Odpisz na wiadomość
+Kopiuj
+20:32
+Maateriały do przeczytania i ćwiczenia po tej cześci kursu ?
+Odpisz na wiadomość
+Kopiuj
+SDA20:33
+kaggle.com
+Odpisz na wiadomość
+Kopiuj
+
+20:33 05.04.2022
+
+20:37 05.04.2022
+
+
+
+
+
+
